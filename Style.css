@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+#items-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Căn giữa các khung sản phẩm */
+}
+
+.item {
+    background-color: #fff;
+    border: 2px solid #ddd; /* Đường viền khung sản phẩm */
+    border-radius: 10px; /* Bo góc khung sản phẩm */
+    overflow: hidden;
+    width: calc(25% - 20px); /* Chiều rộng mỗi khung sản phẩm */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    padding: 15px; /* Khoảng đệm bên trong khung sản phẩm */
+    box-sizing: border-box; /* Bao gồm padding trong chiều rộng và chiều cao */
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Khoảng cách giữa hình ảnh và tiêu đề */
+}
+
+.item h2 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 10px 0; /* Khoảng đệm trên dưới của tiêu đề */
+}
+
+.item p {
+    padding: 0 10px 10px; /* Khoảng đệm cho đoạn văn mô tả */
+}
+
+.item:hover {
+    transform: scale(1.05); /* Hiệu ứng phóng to khi hover */
+}
